@@ -6,5 +6,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+[9.0.1.0.0] - 2018-02-09
 ### added
 - Autodetects delivery method in ecommerce
