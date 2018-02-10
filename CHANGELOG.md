@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+[9.0.1.0.1] 2018-02-09
+### changed
+- Fix: Calls method _get_delivery_carrier_id() in sale with parameter website enabled.
+
 [9.0.1.0.0] - 2018-02-09
 ### added
 - Autodetects delivery method in ecommerce
