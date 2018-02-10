@@ -4,7 +4,7 @@
 
 {
     'name': 'Autodetect Delivery Method in Website',
-    'version': '9.0.1.0.0',
+    'version': '9.0.1.0.1',
     'category': 'Website',
     'author': 'Humanytek',
     'website': "http://www.humanytek.com",
