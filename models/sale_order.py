@@ -11,7 +11,8 @@ class SaleOrder(models.Model):
 
         available_carrier_ids = super(
             SaleOrder, self)._get_delivery_methods(order)
-        carrier = order._get_delivery_carrier_id(website=True)
-        if carrier and carrier.id in available_carrier_ids:
+        carrier = order._get_delivery_carrier_id(
+            delivery_carriers_ids=available_carrier_ids)
+        if carrier and carrier.id:
             return [carrier.id]
         return []
