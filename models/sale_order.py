@@ -11,8 +11,8 @@ class SaleOrder(models.Model):
         sql = ("SELECT id"
                " FROM delivery_carrier"
                " WHERE website_published=true"
-               " AND '" + order.partner_shipping_id.zip + "' <= zip_from"
-               " AND '" + order.partner_shipping_id.zip + "' >= zip_to")
+               " AND zip_from <= '" + order.partner_shipping_id.zip +
+               "' AND zip_to >= '" + order.partner_shipping_id.zip + "'")
         self.env.cr.execute(sql)
 
         delivery_carriers_ids = [dc[0] for dc in self.env.cr.fetchall() if dc]
