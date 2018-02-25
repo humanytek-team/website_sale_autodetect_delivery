@@ -4,7 +4,7 @@
 
 {
     'name': 'Autodetect Delivery Method in Ecommerce',
-    'version': '9.0.1.0.2',
+    'version': '9.0.1.0.3',
     'category': 'Website',
     'author': 'Humanytek',
     'website': "http://www.humanytek.com",
