@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [9.0.1.0.3] - 2018-02-25
 ### changed
 - Fix: Removes call to method _get_delivery_methods() original.
 - Fix: iteare only over factible carriers
