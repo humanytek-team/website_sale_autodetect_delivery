@@ -8,6 +8,10 @@ class SaleOrder(models.Model):
 
     @api.model
     def _get_delivery_methods(self, order):
+
+        if not order.partner_shipping_id and order.partner_shipping_id.zip:
+            return []
+
         sql = ("SELECT id"
                " FROM delivery_carrier"
                " WHERE website_published=true"
